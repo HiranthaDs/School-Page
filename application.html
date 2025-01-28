@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application - St. Sebastian College</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Application Form</h1>
+        <p>Apply to join St. Sebastian College today!</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="resources.html">Resources</a>
+        <a href="application.html">Application</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="container">
+        <form id="applicationForm" action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="grade">Grade Applying For:</label>
+            <select id="grade" name="grade" required>
+                <option value="6">Grade 6</option>
+                <option value="7">Grade 7</option>
+                <option value="8">Grade 8</option>
+                <option value="1">Grade 1</option> <!-- New option for Grade 1 -->
+            </select>
+
+            <div id="grade1Fields" style="display:none;">
+                <h3>Grade 1 Application Details:</h3>
+                <label for="preschool">Preschool Name:</label>
+                <input type="text" id="preschool" name="preschool">
+
+                <label for="parentName">Parent's Name:</label>
+                <input type="text" id="parentName" name="parentName">
+
+                <label for="parentPhone">Parent's Phone Number:</label>
+                <input type="tel" id="parentPhone" name="parentPhone">
+
+                <label for="address">Home Address:</label>
+                <input type="text" id="address" name="address">
+
+                <label for="birthCertificate">Birth Certificate ID:</label>
+                <input type="text" id="birthCertificate" name="birthCertificate">
+            </div>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2023 St. Sebastian College. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Show or hide Grade 1 fields based on the selected grade
+        document.getElementById('grade').addEventListener('change', function() {
+            if (this.value === '1') {
+                document.getElementById('grade1Fields').style.display = 'block';
+            } else {
+                document.getElementById('grade1Fields').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Sebastian College Kandana</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add background image to the header */
+        header {
+            background-image: url('photos/10.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        footer img {
+            width: 150px;  /* Adjust the width of the logo */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to St. Sebastian College Kandana</h1>
+        <p>Shaping the future, one student at a time.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="teachers.html">Teachers</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="events.html">Events</a>
+        <a href="resources.html">Resources</a>
+        <a href="application.html">Application</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <!-- Slideshow Section -->
+        <section id="home">
+            <div class="slideshow-container">
+                <div class="slides">
+                    <img src="photos/1.jpg" alt="Image 1">
+                </div>
+                <div class="slides">
+                    <img src="photos/2.jpg" alt="Image 2">
+                </div>
+                <div class="slides">
+                    <img src="photos/3.jpg" alt="Image 3">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+
+        <!-- Additional Information Section -->
+        <section id="welcome">
+            <h2>About Us</h2>
+            <p>At St. Sebastian College, we believe in providing high-quality education, fostering holistic development, and nurturing the potential of each student. Our dedicated team of teachers ensures a balanced approach, preparing students for a bright future.</p>
+        </section>
+
+        <!-- Mission Section -->
+        <section id="mission">
+            <h2>Our Mission</h2>
+            <p>Our mission is to empower students with the knowledge, skills, and values they need to succeed in their academic journey and beyond. We focus on the all-round development of our students through academic excellence, extracurricular activities, and character-building programs.</p>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements">
+            <h2>Our Achievements</h2>
+            <ul>
+                <li>Ranked among the top schools in the district</li>
+                <li>Numerous awards in sports and cultural activities</li>
+                <li>Consistent excellent performance in national exams</li>
+                <li>State-of-the-art facilities for students</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="container">
+        <section id="gallery">
+            <h2>Memories Captured</h2>
+            <div class="photo-grid">
+                <a href="#img1">
+                    <img src="photos/1.jpg" alt="Gallery Image 1">
+                </a>
+                <a href="#img2">
+                    <img src="photos/2.jpg" alt="Gallery Image 2">
+                </a>
+                <a href="#img3">
+                    <img src="photos/3.jpg" alt="Gallery Image 3">
+                </a>
+                <a href="#img4">
+                    <img src="photos/4.jpg" alt="Gallery Image 4">
+                </a>
+                <a href="#img5">
+                    <img src="photos/5.jpg" alt="Gallery Image 5">
+                </a>
+                <a href="#img6">
+                    <img src="photos/6.jpg" alt="Gallery Image 6">
+                </a>
+                <a href="#img7">
+                    <img src="photos/7.jpg" alt="Gallery Image 7">
+                </a>
+                <a href="#img8">
+                    <img src="photos/8.jpg" alt="Gallery Image 8">
+                </a>
+                <a href="#img9">
+                    <img src="photos/9.jpg" alt="Gallery Image 9">
+                </a>
+            </div>
+        </section>
+
+        <!-- Lightbox for displaying the clicked images -->
+        <div id="img1" class="lightbox">
+            <img src="photos/1.jpg" alt="Gallery Image 1">
+        </div>
+        <div id="img2" class="lightbox">
+            <img src="photos/2.jpg" alt="Gallery Image 2">
+        </div>
+        <div id="img3" class="lightbox">
+            <img src="photos/3.jpg" alt="Gallery Image 3">
+        </div>
+        <div id="img4" class="lightbox">
+            <img src="photos/4.jpg" alt="Gallery Image 4">
+        </div>
+        <div id="img5" class="lightbox">
+            <img src="photos/5.jpg" alt="Gallery Image 5">
+        </div>
+        <div id="img6" class="lightbox">
+            <img src="photos/6.jpg" alt="Gallery Image 6">
+        </div>
+        <div id="img7" class="lightbox">
+            <img src="photos/7.jpg" alt="Gallery Image 7">
+        </div>
+        <div id="img8" class="lightbox">
+            <img src="photos/8.jpg" alt="Gallery Image 8">
+        </div>
+        <div id="img9" class="lightbox">
+            <img src="photos/9.jpg" alt="Gallery Image 9">
+        </div>
+    </div>  
+
+    <!-- Button Grid Section -->
+    <section id="buttons">
+        <div class="button-grid">
+            <div class="button-item">
+                <a href="about.html" class="btn">Learn More About Us</a>
+            </div>
+            <div class="button-item">
+                <a href="application.html" class="btn">Apply Now</a>
+            </div>
+            <div class="button-item">
+                <a href="events.html" class="btn">Upcoming Events</a>
+            </div>
+            <div class="button-item">
+                <a href="gallery.html" class="btn">Our Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 St. Sebastian College Kandana. All Rights Reserved.</p>
+        <img src="photos/logo.jpg" alt="St. Sebastian College Logo">
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

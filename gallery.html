@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Photo Grid Styles */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .photo-grid img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Lightbox Styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Photo Gallery</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="teachers.html">Teachers</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="events.html">Events</a>
+        <a href="resources.html">Resources</a>
+        <a href="applications.html">Applications</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="gallery">
+            <h2>Memories Captured</h2>
+            <div class="photo-grid">
+                <a href="#img1">
+                    <img src="photos/1.jpg" alt="Gallery Image 1">
+                </a>
+                <a href="#img2">
+                    <img src="photos/2.jpg" alt="Gallery Image 2">
+                </a>
+                <a href="#img3">
+                    <img src="photos/3.jpg" alt="Gallery Image 3">
+                </a>
+                <a href="#img4">
+                    <img src="photos/4.jpg" alt="Gallery Image 4">
+                </a>
+                <a href="#img5">
+                    <img src="photos/5.jpg" alt="Gallery Image 5">
+                </a>
+                <a href="#img6">
+                    <img src="photos/6.jpg" alt="Gallery Image 6">
+                </a>
+                <a href="#img7">
+                    <img src="photos/7.jpg" alt="Gallery Image 7">
+                </a>
+                <a href="#img8">
+                    <img src="photos/8.jpg" alt="Gallery Image 8">
+                </a>
+                <a href="#img9">
+                    <img src="photos/9.jpg" alt="Gallery Image 9">
+                </a>
+            </div>
+        </section>
+
+        <!-- Lightbox for displaying the clicked images -->
+        <div id="img1" class="lightbox">
+            <img src="photos/1.jpg" alt="Gallery Image 1">
+        </div>
+        <div id="img2" class="lightbox">
+            <img src="photos/2.jpg" alt="Gallery Image 2">
+        </div>
+        <div id="img3" class="lightbox">
+            <img src="photos/3.jpg" alt="Gallery Image 3">
+        </div>
+        <div id="img4" class="lightbox">
+            <img src="photos/4.jpg" alt="Gallery Image 4">
+        </div>
+        <div id="img5" class="lightbox">
+            <img src="photos/5.jpg" alt="Gallery Image 5">
+        </div>
+        <div id="img6" class="lightbox">
+            <img src="photos/6.jpg" alt="Gallery Image 6">
+        </div>
+        <div id="img7" class="lightbox">
+            <img src="photos/7.jpg" alt="Gallery Image 7">
+        </div>
+        <div id="img8" class="lightbox">
+            <img src="photos/8.jpg" alt="Gallery Image 8">
+        </div>
+        <div id="img9" class="lightbox">
+            <img src="photos/9.jpg" alt="Gallery Image 9">
+        </div>
+    </div>   
+
+    <footer>
+        <p>&copy; 2025 St. Sebastian College Kandana. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
